@@ -45,15 +45,6 @@ const ProjectCard = ({
         >
           <Github className="h-5 w-5" />
         </a>
-        <a
-          href={liveUrl}
-          className="text-muted-foreground hover:text-terminal-cyan"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Live Demo"
-        >
-          <ExternalLink className="h-5 w-5" />
-        </a>
       </CardFooter>
     </Card>
   );
@@ -62,32 +53,28 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
-      title: "Distributed Threat Detection Engine",
-      description: "Designed and implemented a high-throughput distributed backend system that processes millions of cloud events per second to identify security threats in real-time.",
-      tags: ["Go", "Kafka", "Redis", "Microservices", "Distributed Systems"],
-      githubUrl: "#",
-      liveUrl: "#",
+      title: "Briefly – Automated Blog & Tech Book Summarizer",
+      description: "A tool that automatically summarizes tech blog posts and software design books into short, digestible insights. It powers a Telegram channel where developers can stay updated without spending hours reading.",
+      tags: ["C# (.NET)", "Blazor", "Redis", "Microservices", "Distributed Systems"],
+      githubUrl: "https://github.com/Eliran-Turgeman/Briefly",
     },
     {
-      title: "Cloud Resource Access Service",
-      description: "Built a scalable API gateway for enforcing access control policies across multi-cloud environments, handling 50,000+ requests per second with sub-10ms latency.",
-      tags: ["Rust", "gRPC", "Kubernetes", "Backend", "High Performance"],
-      githubUrl: "#",
-      liveUrl: "#",
+      title: "Collecto - Self-Hosted Form & Email Signup Platform",
+      description: "A backend-first, self-hostable platform for creating signup forms and collecting emails. Designed for developers who want full control, no vendor lock-in, and strong protection against spam.",
+      tags: ["C# (.NET)", "SQLite", "Redis", "Microservices", "Distributed Systems"],
+      githubUrl: "https://github.com/Eliran-Turgeman/Collecto",
     },
     {
-      title: "Event Processing Pipeline",
-      description: "Architected a fault-tolerant data pipeline for processing security telemetry from thousands of enterprise cloud deployments with guaranteed delivery semantics.",
-      tags: ["Python", "AWS", "ELK Stack", "Streaming", "Reliability"],
-      githubUrl: "#",
-      liveUrl: "#",
+      title: "OmniBridge – Universal CLI Interface for AI Models",
+      description: "A developer-first tool to unify access to multiple AI models via a simple command-line interface. OmniBridge wraps models like GPT and DALL·E, allowing you to run prompts, chain models together, and create complex flows—like Auto-GPT—without writing custom scripts.",
+      tags: ["Python", "OpenAI", "API Development"],
+      githubUrl: "https://github.com/OmniSpective/OmniBridge",
     },
     {
-      title: "Security Configuration Service",
-      description: "Developed a distributed configuration management system for security policies with strong consistency guarantees and multi-region replication capabilities.",
-      tags: ["Java", "Cassandra", "Backend", "Distributed Systems", "Scalability"],
+      title: "Checkov – Infrastructure as Code (IaC) Security Scanner",
+      description: "Checkov is an open-source static code analysis tool for securing infrastructure-as-code (Terraform, CloudFormation, Kubernetes, etc.). I contributed to this project during my time at Palo Alto Networks.",
+      tags: ["Python", "Terraform", "Github Actions", "API Development"],
       githubUrl: "#",
-      liveUrl: "#",
     },
   ];
 
@@ -100,7 +87,7 @@ const Projects = () => {
               Featured Projects
             </h2>
             <p className="text-gray-400 mb-8 max-w-3xl">
-              A selection of backend systems I've built for cloud security products. Each demonstrates 
+              A selection of open source backend systems I've built. Each demonstrates 
               my focus on reliability, scalability, and security in high-traffic distributed 
               environments.
             </p>
@@ -115,12 +102,11 @@ const Projects = () => {
               description={project.description} 
               tags={project.tags} 
               githubUrl={project.githubUrl} 
-              liveUrl={project.liveUrl} 
             />
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <p className="text-terminal-comment mb-2">// View more of my work on GitHub</p>
           <a 
             href="#" 
@@ -128,7 +114,7 @@ const Projects = () => {
           >
             View More Projects
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

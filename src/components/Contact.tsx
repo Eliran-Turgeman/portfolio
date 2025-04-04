@@ -148,22 +148,22 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Mail className="text-terminal-yellow mr-3" />
-                    <a href="mailto:hello@yourdomain.com" className="text-gray-300 hover:text-terminal-cyan">
-                      hello@yourdomain.com
+                    <a href="mailto:eliran.turgeman.cs@gmail.com" className="text-gray-300 hover:text-terminal-cyan">
+                      eliran.turgeman.cs@gmail.com
                     </a>
                   </div>
                   
                   <div className="flex items-center">
                     <Github className="text-terminal-purple mr-3" />
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-terminal-cyan">
-                      github.com/yourusername
+                    <a href="https://github.com/Eliran-Turgeman" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-terminal-cyan">
+                      github.com/Eliran-Turgeman
                     </a>
                   </div>
                   
                   <div className="flex items-center">
                     <Linkedin className="text-terminal-cyan mr-3" />
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-terminal-cyan">
-                      linkedin.com/in/yourprofile
+                    <a href="https://www.linkedin.com/in/eliran-turgeman/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-terminal-cyan">
+                      linkedin.com/in/eliran-turgeman
                     </a>
                   </div>
                 </div>

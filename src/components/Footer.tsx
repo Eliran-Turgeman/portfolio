@@ -12,16 +12,13 @@ const Footer = () => {
           <div className="flex items-center mb-4 md:mb-0">
             <Terminal className="h-5 w-5 text-terminal-green mr-2" />
             <span className="text-terminal-green">
-              <span className="text-white">dev</span>@portfolio<span className="text-white">:~$</span>
+              <span className="text-white">Eliran Turgeman</span>@portfolio<span className="text-white">:~$</span>
             </span>
           </div>
           
           <div className="text-center md:text-right">
             <p className="text-sm text-muted-foreground">
-              &copy; {currentYear} | Built with React &amp; TypeScript
-            </p>
-            <p className="text-xs text-terminal-comment mt-1">
-              $ echo "Thanks for visiting" &gt; appreciation.txt
+              &copy; {currentYear} 
             </p>
           </div>
         </div>

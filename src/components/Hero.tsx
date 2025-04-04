@@ -35,7 +35,7 @@ const Hero = () => {
               <div className="space-y-2">
                 <div className="flex items-center gap-4 mb-6">
                   <Avatar className="h-16 w-16 border-2 border-terminal-cyan">
-                    <AvatarImage src="/placeholder.svg" alt="Profile Picture" />
+                    <AvatarImage src="/pp.jpg" alt="Profile Picture" />
                     <AvatarFallback className="bg-terminal-gray text-terminal-green">DEV</AvatarFallback>
                   </Avatar>
                   <TerminalEffect 
@@ -86,16 +86,24 @@ const Hero = () => {
                     <Button
                       size="lg"
                       className="bg-terminal-green text-black hover:bg-terminal-green/90"
+                      onClick={() => {
+                        // example: navigate to a section
+                        document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+                      }}
                     >
                       Explore Projects
                     </Button>
-                    <Button
-                      variant="outline"
-                      size="lg"
-                      className="border-terminal-cyan text-terminal-cyan hover:bg-terminal-cyan/10"
-                    >
-                      Contact Me
-                    </Button>
+
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="border-terminal-cyan text-terminal-cyan hover:bg-terminal-cyan/10"
+                    onClick={() => {
+                      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                  >
+                    Contact Me
+                  </Button>
                   </div>
                 )}
               </div>

@@ -37,17 +37,17 @@ const Skills = () => {
     {
       title: "Languages & Runtime",
       icon: <Cpu className="w-4 h-4 text-terminal-purple" />,
-      skills: ["Go", "Python", "Java", "Rust", "TypeScript/Node.js"]
+      skills: ["C# (.NET)", "Python", "TypeScript/Node.js", "Go"]
     },
     {
-      title: "Infrastructure & Cloud",
+      title: "Infra & Cloud",
       icon: <Database className="w-4 h-4 text-terminal-yellow" />,
       skills: ["AWS", "Azure", "Kubernetes", "Docker", "Terraform"]
     },
     {
       title: "Backend Technologies",
       icon: <Server className="w-4 h-4 text-terminal-cyan" />,
-      skills: ["Microservices", "gRPC/REST APIs", "Kafka", "Redis", "PostgreSQL/NoSQL"]
+      skills: ["Microservices", "gRPC/REST APIs", "Message Brokers", "Redis", "SQL/NoSQL"]
     },
     {
       title: "System Design",

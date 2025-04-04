@@ -24,7 +24,7 @@ const Header = () => {
           <a href="#" className="flex items-center space-x-2">
             <Terminal className="h-6 w-6 text-terminal-green" />
             <span className="text-lg font-semibold text-terminal-green tracking-tight">
-              <span className="text-white">dev</span>@portfolio<span className="text-white">:~$</span>
+              <span className="text-white">Eliran Turgeman</span>@portfolio<span className="text-white">:~$</span>
             </span>
           </a>
 
@@ -53,11 +53,14 @@ const Header = () => {
               </a>
             ))}
             <Button
+              onClick={() => window.open('https://www.16elt.com/', '_blank')}
               variant="outline"
               className="border-terminal-cyan text-terminal-cyan hover:bg-terminal-cyan/10"
             >
-              <Code className="mr-2 h-4 w-4" /> Resume
+              <Code className="mr-2 h-4 w-4" /> Blog
             </Button>
+
+
           </nav>
         </div>
 
@@ -75,10 +78,11 @@ const Header = () => {
               </a>
             ))}
             <Button
+              onClick={() => window.open('https://www.16elt.com/', '_blank')}
               variant="outline"
-              className="mt-2 w-full border-terminal-cyan text-terminal-cyan hover:bg-terminal-cyan/10"
+              className="border-terminal-cyan text-terminal-cyan hover:bg-terminal-cyan/10"
             >
-              <Code className="mr-2 h-4 w-4" /> Resume
+              <Code className="mr-2 h-4 w-4" /> Blog
             </Button>
           </nav>
         )}
