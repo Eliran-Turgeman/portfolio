@@ -62,30 +62,30 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
-      title: "Distributed Cache System",
-      description: "High-performance distributed caching system built with Redis and Node.js, supporting horizontal scaling and fault tolerance.",
-      tags: ["Node.js", "Redis", "Docker", "System Design"],
+      title: "Cloud Security Posture Management",
+      description: "Developed a security posture management solution that identifies and remediates security risks across multi-cloud environments.",
+      tags: ["Azure", "Security", "Terraform", "Python"],
       githubUrl: "#",
       liveUrl: "#",
     },
     {
-      title: "API Gateway Microservice",
-      description: "Centralized API gateway that handles authentication, rate limiting, and request routing for a microservices architecture.",
-      tags: ["Go", "Kubernetes", "gRPC", "Microservices"],
+      title: "Zero Trust Access Framework",
+      description: "Designed and implemented a zero trust architecture for secure access to cloud resources, minimizing the attack surface.",
+      tags: ["Security", "IAM", "API Gateway", "Microservices"],
       githubUrl: "#",
       liveUrl: "#",
     },
     {
-      title: "Real-time Data Pipeline",
-      description: "Scalable data processing pipeline that handles millions of events per second with minimal latency.",
-      tags: ["Kafka", "Python", "AWS", "Big Data"],
+      title: "Threat Detection System",
+      description: "Built a real-time threat detection system that analyzes cloud infrastructure logs to identify potential security incidents.",
+      tags: ["SIEM", "Python", "Cloud Security", "Big Data"],
       githubUrl: "#",
       liveUrl: "#",
     },
     {
-      title: "Database Optimization Framework",
-      description: "A toolkit for identifying and resolving performance bottlenecks in relational and NoSQL databases.",
-      tags: ["SQL", "MongoDB", "Performance", "DevOps"],
+      title: "Secure Data Pipeline",
+      description: "Architected and implemented an end-to-end encrypted data pipeline for sensitive information handling in compliance with regulatory requirements.",
+      tags: ["Encryption", "Kubernetes", "Compliance", "Data Security"],
       githubUrl: "#",
       liveUrl: "#",
     },
@@ -100,9 +100,9 @@ const Projects = () => {
               Featured Projects
             </h2>
             <p className="text-gray-400 mb-8 max-w-3xl">
-              A selection of my recent backend engineering projects. Each demonstrates 
-              my approach to solving complex technical challenges and building 
-              scalable systems.
+              A selection of my security engineering and cloud infrastructure projects. Each demonstrates 
+              my approach to solving complex security challenges and building 
+              scalable, secure systems.
             </p>
           </CommandPrompt>
         </div>

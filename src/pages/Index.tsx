@@ -11,7 +11,7 @@ import { Toaster } from "@/components/ui/toaster";
 const Index = () => {
   useEffect(() => {
     // Set page title
-    document.title = "Backend Engineer Portfolio";
+    document.title = "Cloud Security Engineer Portfolio";
   }, []);
 
   return (

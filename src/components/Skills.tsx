@@ -35,24 +35,24 @@ const SkillCategory = ({
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Languages",
+      title: "Languages & Tools",
       icon: <Cpu className="w-4 h-4 text-terminal-purple" />,
-      skills: ["JavaScript/TypeScript", "Python", "Go", "SQL", "Rust (Learning)"]
+      skills: ["JavaScript/TypeScript", "Python", "Go", "C#", "PowerShell"]
     },
     {
-      title: "Databases",
+      title: "Cloud & Security",
       icon: <Database className="w-4 h-4 text-terminal-yellow" />,
-      skills: ["PostgreSQL", "MongoDB", "Redis", "Elasticsearch", "Cassandra"]
+      skills: ["AWS", "Azure", "Zero Trust Architecture", "Threat Modeling", "IAM"]
     },
     {
       title: "DevOps",
       icon: <Server className="w-4 h-4 text-terminal-cyan" />,
-      skills: ["Docker", "Kubernetes", "AWS/GCP", "CI/CD Pipelines", "Terraform"]
+      skills: ["Docker", "Kubernetes", "CI/CD Pipelines", "Infrastructure as Code", "Terraform"]
     },
     {
       title: "Architecture",
       icon: <Settings className="w-4 h-4 text-terminal-green" />,
-      skills: ["Microservices", "RESTful APIs", "GraphQL", "Event-Driven Design", "System Design"]
+      skills: ["Microservices", "RESTful APIs", "Security by Design", "Distributed Systems", "Cloud-Native"]
     }
   ];
 
@@ -65,8 +65,8 @@ const Skills = () => {
               Technical Skills
             </h2>
             <p className="text-gray-400 mb-8 max-w-3xl">
-              My expertise spans a range of backend technologies, frameworks, and methodologies
-              that enable me to build efficient, scalable, and maintainable systems.
+              My expertise spans cloud security, distributed systems, and security architecture,
+              enabling me to build resilient and secure cloud infrastructure and security products.
             </p>
           </CommandPrompt>
         </div>
@@ -88,10 +88,10 @@ const Skills = () => {
               <div className="terminal-content text-sm">
                 <pre className="text-terminal-yellow">
 {`{
-  "problem_solving": "Methodical approach to breaking down complex problems",
-  "optimization": "Focus on performance and resource efficiency",
-  "best_practices": "Clean code, thorough testing, comprehensive documentation",
-  "continuous_learning": "Always expanding knowledge of new technologies"
+  "security_first": "Prioritizing security in every aspect of system design",
+  "scalability": "Building solutions that scale with growing business needs",
+  "best_practices": "Implementing industry standards and security frameworks",
+  "threat_awareness": "Keeping up with evolving threats and countermeasures"
 }`}
                 </pre>
               </div>
