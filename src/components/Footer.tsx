@@ -18,10 +18,10 @@ const Footer = () => {
           
           <div className="text-center md:text-right">
             <p className="text-sm text-muted-foreground">
-              &copy; {currentYear} | Built with React & TypeScript
+              &copy; {currentYear} | Built with React &amp; TypeScript
             </p>
             <p className="text-xs text-terminal-comment mt-1">
-              $ echo "Thanks for visiting" > appreciation.txt
+              $ echo "Thanks for visiting" &gt; appreciation.txt
             </p>
           </div>
         </div>
