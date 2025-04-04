@@ -4,6 +4,7 @@ import TerminalEffect from "./TerminalEffect";
 import CommandPrompt from "./CommandPrompt";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Hero = () => {
   const [showIntro, setShowIntro] = useState(false);
@@ -32,12 +33,18 @@ const Hero = () => {
           <div className="terminal-content">
             <CommandPrompt command="whoami">
               <div className="space-y-2">
-                <TerminalEffect 
-                  text="Backend Engineer | Systems Architect | Problem Solver" 
-                  className="text-xl md:text-3xl font-bold text-terminal-cyan block mb-6"
-                  speed={30}
-                  onComplete={() => setShowIntro(true)}
-                />
+                <div className="flex items-center gap-4 mb-6">
+                  <Avatar className="h-16 w-16 border-2 border-terminal-cyan">
+                    <AvatarImage src="/placeholder.svg" alt="Profile Picture" />
+                    <AvatarFallback className="bg-terminal-gray text-terminal-green">DEV</AvatarFallback>
+                  </Avatar>
+                  <TerminalEffect 
+                    text="Backend Engineer | Systems Architect | Problem Solver" 
+                    className="text-xl md:text-3xl font-bold text-terminal-cyan block"
+                    speed={30}
+                    onComplete={() => setShowIntro(true)}
+                  />
+                </div>
                 
                 {showIntro && (
                   <CommandPrompt output>
