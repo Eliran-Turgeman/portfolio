@@ -39,7 +39,7 @@ const Hero = () => {
                     <AvatarFallback className="bg-terminal-gray text-terminal-green">DEV</AvatarFallback>
                   </Avatar>
                   <TerminalEffect 
-                    text="Security Engineer | Cloud Architect | Problem Solver" 
+                    text="Backend Engineer | Distributed Systems | Cloud Security" 
                     className="text-xl md:text-3xl font-bold text-terminal-cyan block"
                     speed={30}
                     onComplete={() => setShowIntro(true)}
@@ -49,7 +49,7 @@ const Hero = () => {
                 {showIntro && (
                   <CommandPrompt output>
                     <TerminalEffect 
-                      text="I design and implement secure, scalable cloud systems with a focus on security architecture. With 5+ years of experience at Microsoft and Palo Alto Networks, I specialize in cloud security products that protect enterprise infrastructure against evolving threats."
+                      text="I architect and build high-traffic distributed systems for cloud security products. With 5+ years at Microsoft and Palo Alto Networks, I specialize in creating scalable, reliable backend systems that protect enterprise infrastructure."
                       className="text-gray-300 leading-relaxed"
                       startDelay={500}
                       speed={10}
@@ -61,7 +61,7 @@ const Hero = () => {
                 {showSkills && (
                   <CommandPrompt command="ls -la ./skills">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-2 my-4">
-                      {["Cloud Security", "Distributed Systems", "Security Architecture", "API Design", "System Design", "AWS/Azure", "Docker", "Kubernetes"].map((skill, index) => (
+                      {["Distributed Systems", "Backend Architecture", "Cloud Infrastructure", "API Design", "System Reliability", "Scalability", "Performance", "Security"].map((skill, index) => (
                         <div 
                           key={skill}
                           className="bg-terminal-gray/50 border border-terminal-gray rounded px-3 py-1 text-terminal-green"
@@ -72,7 +72,7 @@ const Hero = () => {
                       ))}
                     </div>
                     <TerminalEffect 
-                      text="With 5+ years of experience building secure cloud infrastructure and security products."
+                      text="With 5+ years of experience building high-performance backend systems for cloud security products."
                       className="text-terminal-yellow block mt-4"
                       startDelay={800}
                       speed={20}

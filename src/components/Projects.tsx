@@ -62,30 +62,30 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
-      title: "Cloud Security Posture Management",
-      description: "Developed a security posture management solution that identifies and remediates security risks across multi-cloud environments.",
-      tags: ["Azure", "Security", "Terraform", "Python"],
+      title: "Distributed Threat Detection Engine",
+      description: "Designed and implemented a high-throughput distributed backend system that processes millions of cloud events per second to identify security threats in real-time.",
+      tags: ["Go", "Kafka", "Redis", "Microservices", "Distributed Systems"],
       githubUrl: "#",
       liveUrl: "#",
     },
     {
-      title: "Zero Trust Access Framework",
-      description: "Designed and implemented a zero trust architecture for secure access to cloud resources, minimizing the attack surface.",
-      tags: ["Security", "IAM", "API Gateway", "Microservices"],
+      title: "Cloud Resource Access Service",
+      description: "Built a scalable API gateway for enforcing access control policies across multi-cloud environments, handling 50,000+ requests per second with sub-10ms latency.",
+      tags: ["Rust", "gRPC", "Kubernetes", "Backend", "High Performance"],
       githubUrl: "#",
       liveUrl: "#",
     },
     {
-      title: "Threat Detection System",
-      description: "Built a real-time threat detection system that analyzes cloud infrastructure logs to identify potential security incidents.",
-      tags: ["SIEM", "Python", "Cloud Security", "Big Data"],
+      title: "Event Processing Pipeline",
+      description: "Architected a fault-tolerant data pipeline for processing security telemetry from thousands of enterprise cloud deployments with guaranteed delivery semantics.",
+      tags: ["Python", "AWS", "ELK Stack", "Streaming", "Reliability"],
       githubUrl: "#",
       liveUrl: "#",
     },
     {
-      title: "Secure Data Pipeline",
-      description: "Architected and implemented an end-to-end encrypted data pipeline for sensitive information handling in compliance with regulatory requirements.",
-      tags: ["Encryption", "Kubernetes", "Compliance", "Data Security"],
+      title: "Security Configuration Service",
+      description: "Developed a distributed configuration management system for security policies with strong consistency guarantees and multi-region replication capabilities.",
+      tags: ["Java", "Cassandra", "Backend", "Distributed Systems", "Scalability"],
       githubUrl: "#",
       liveUrl: "#",
     },
@@ -100,9 +100,9 @@ const Projects = () => {
               Featured Projects
             </h2>
             <p className="text-gray-400 mb-8 max-w-3xl">
-              A selection of my security engineering and cloud infrastructure projects. Each demonstrates 
-              my approach to solving complex security challenges and building 
-              scalable, secure systems.
+              A selection of backend systems I've built for cloud security products. Each demonstrates 
+              my focus on reliability, scalability, and security in high-traffic distributed 
+              environments.
             </p>
           </CommandPrompt>
         </div>

@@ -35,24 +35,24 @@ const SkillCategory = ({
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Languages & Tools",
+      title: "Languages & Runtime",
       icon: <Cpu className="w-4 h-4 text-terminal-purple" />,
-      skills: ["JavaScript/TypeScript", "Python", "Go", "C#", "PowerShell"]
+      skills: ["Go", "Python", "Java", "Rust", "TypeScript/Node.js"]
     },
     {
-      title: "Cloud & Security",
+      title: "Infrastructure & Cloud",
       icon: <Database className="w-4 h-4 text-terminal-yellow" />,
-      skills: ["AWS", "Azure", "Zero Trust Architecture", "Threat Modeling", "IAM"]
+      skills: ["AWS", "Azure", "Kubernetes", "Docker", "Terraform"]
     },
     {
-      title: "DevOps",
+      title: "Backend Technologies",
       icon: <Server className="w-4 h-4 text-terminal-cyan" />,
-      skills: ["Docker", "Kubernetes", "CI/CD Pipelines", "Infrastructure as Code", "Terraform"]
+      skills: ["Microservices", "gRPC/REST APIs", "Kafka", "Redis", "PostgreSQL/NoSQL"]
     },
     {
-      title: "Architecture",
+      title: "System Design",
       icon: <Settings className="w-4 h-4 text-terminal-green" />,
-      skills: ["Microservices", "RESTful APIs", "Security by Design", "Distributed Systems", "Cloud-Native"]
+      skills: ["Distributed Systems", "High Availability", "Fault Tolerance", "Load Balancing", "Performance Optimization"]
     }
   ];
 
@@ -65,8 +65,8 @@ const Skills = () => {
               Technical Skills
             </h2>
             <p className="text-gray-400 mb-8 max-w-3xl">
-              My expertise spans cloud security, distributed systems, and security architecture,
-              enabling me to build resilient and secure cloud infrastructure and security products.
+              My expertise in backend engineering and distributed systems allows me to build
+              reliable, scalable, and secure cloud infrastructure for high-traffic applications.
             </p>
           </CommandPrompt>
         </div>
@@ -88,10 +88,10 @@ const Skills = () => {
               <div className="terminal-content text-sm">
                 <pre className="text-terminal-yellow">
 {`{
-  "security_first": "Prioritizing security in every aspect of system design",
-  "scalability": "Building solutions that scale with growing business needs",
-  "best_practices": "Implementing industry standards and security frameworks",
-  "threat_awareness": "Keeping up with evolving threats and countermeasures"
+  "reliability": "Building systems that operate continuously under heavy load",
+  "scalability": "Designing architectures that scale elastically with demand",
+  "performance": "Optimizing for low latency and high throughput",
+  "security": "Implementing strong security practices from the ground up"
 }`}
                 </pre>
               </div>
