@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import TerminalEffect from "./TerminalEffect";
 import CommandPrompt from "./CommandPrompt";
@@ -32,10 +33,10 @@ const Hero = () => {
           <div className="terminal-content">
             <CommandPrompt command="whoami">
               <div className="space-y-2">
-                <div className="flex items-center gap-4 mb-6">
-                  <Avatar className="h-16 w-16 border-2 border-terminal-cyan">
-                    <AvatarImage src="./pp.jpg" alt="Profile Picture" />
-                    <AvatarFallback className="bg-terminal-gray text-terminal-green">DEV</AvatarFallback>
+                <div className="flex items-center gap-6 mb-6">
+                  <Avatar className="h-24 w-24 border-2 border-terminal-cyan">
+                    <AvatarImage src="./pp.jpg" alt="Profile Picture" className="object-cover" />
+                    <AvatarFallback className="bg-terminal-gray text-terminal-green text-lg">DEV</AvatarFallback>
                   </Avatar>
                   <TerminalEffect 
                     text="Backend Engineer | Distributed Systems | Cloud Security" 
