@@ -10,13 +10,11 @@ const ProjectCard = ({
   description, 
   tags, 
   githubUrl = "#", 
-  liveUrl = "#" 
 }: {
   title: string;
   description: string;
   tags: string[];
   githubUrl?: string;
-  liveUrl?: string;
 }) => {
   return (
     <Card className="bg-terminal-gray border-terminal-gray hover:border-terminal-cyan transition-all duration-300">
@@ -105,16 +103,6 @@ const Projects = () => {
             />
           ))}
         </div>
-        
-        {/* <div className="mt-12 text-center">
-          <p className="text-terminal-comment mb-2">// View more of my work on GitHub</p>
-          <a 
-            href="#" 
-            className="inline-block px-6 py-3 border border-terminal-cyan text-terminal-cyan hover:bg-terminal-cyan/10 transition-colors rounded-md"
-          >
-            View More Projects
-          </a>
-        </div> */}
       </div>
     </section>
   );

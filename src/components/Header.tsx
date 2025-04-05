@@ -10,19 +10,33 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "Projects", href: "#projects" },
-    { name: "Skills", href: "#skills" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "#home", id: "home" },
+    { name: "Projects", href: "#projects", id: "projects" },
+    { name: "Skills", href: "#skills", id: "skills" },
+    { name: "Contact", href: "#contact", id: "contact" },
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-terminal-black/90 backdrop-blur-sm border-b border-terminal-gray">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <a href="#" className="flex items-center space-x-2">
-            <Terminal className="h-6 w-6 text-terminal-green" />
+        <a 
+            href="#" 
+            className="flex items-center space-x-2"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('home');
+            }}
+          >
+          <Terminal className="h-6 w-6 text-terminal-green" />
             <span className="text-lg font-semibold text-terminal-green tracking-tight">
               <span className="text-white">Eliran Turgeman</span>@portfolio<span className="text-white">:~$</span>
             </span>
@@ -48,6 +62,10 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 className="text-sm text-muted-foreground hover:text-terminal-cyan transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(item.id);
+                }}
               >
                 {item.name}
               </a>
@@ -59,8 +77,6 @@ const Header = () => {
             >
               <Code className="mr-2 h-4 w-4" /> Blog
             </Button>
-
-
           </nav>
         </div>
 
@@ -72,7 +88,11 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 className="block py-2 text-muted-foreground hover:text-terminal-cyan transition-colors"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(item.id);
+                  setIsMenuOpen(false);
+                }}
               >
                 {item.name}
               </a>

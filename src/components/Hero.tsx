@@ -35,7 +35,7 @@ const Hero = () => {
               <div className="space-y-2">
                 <div className="flex items-center gap-4 mb-6">
                   <Avatar className="h-16 w-16 border-2 border-terminal-cyan">
-                    <AvatarImage src="/pp.jpg" alt="Profile Picture" />
+                    <AvatarImage src="./pp.jpg" alt="Profile Picture" />
                     <AvatarFallback className="bg-terminal-gray text-terminal-green">DEV</AvatarFallback>
                   </Avatar>
                   <TerminalEffect 
@@ -115,6 +115,13 @@ const Hero = () => {
           <a 
             href="#projects" 
             className="flex flex-col items-center text-terminal-cyan hover:text-terminal-cyan/80 transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              const projectsSection = document.getElementById("projects");
+              if (projectsSection) {
+                projectsSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
             <span className="text-sm mb-2">View my work</span>
             <ArrowDown className="h-6 w-6 animate-bounce" />
