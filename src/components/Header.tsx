@@ -28,7 +28,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-terminal-black/90 backdrop-blur-sm border-b border-terminal-gray">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-        <a 
+          <a 
             href="#" 
             className="flex items-center space-x-2"
             onClick={(e) => {
@@ -36,7 +36,7 @@ const Header = () => {
               scrollToSection('home');
             }}
           >
-          <Terminal className="h-6 w-6 text-terminal-green" />
+            <Terminal className="h-6 w-6 text-terminal-green" />
             <span className="text-lg font-semibold text-terminal-green tracking-tight">
               <span className="text-white">Eliran Turgeman</span>@portfolio<span className="text-white">:~$</span>
             </span>

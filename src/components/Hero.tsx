@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import TerminalEffect from "./TerminalEffect";
 import CommandPrompt from "./CommandPrompt";
@@ -87,8 +86,10 @@ const Hero = () => {
                       size="lg"
                       className="bg-terminal-green text-black hover:bg-terminal-green/90"
                       onClick={() => {
-                        // example: navigate to a section
-                        document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+                        const projectsSection = document.getElementById("projects");
+                        if (projectsSection) {
+                          projectsSection.scrollIntoView({ behavior: "smooth" });
+                        }
                       }}
                     >
                       Explore Projects
@@ -99,7 +100,10 @@ const Hero = () => {
                     size="lg"
                     className="border-terminal-cyan text-terminal-cyan hover:bg-terminal-cyan/10"
                     onClick={() => {
-                      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                      const contactSection = document.getElementById("contact");
+                      if (contactSection) {
+                        contactSection.scrollIntoView({ behavior: "smooth" });
+                      }
                     }}
                   >
                     Contact Me
