@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import TerminalEffect from "./TerminalEffect";
 import CommandPrompt from "./CommandPrompt";
@@ -35,7 +34,7 @@ const Hero = () => {
               <div className="space-y-2">
                 <div className="flex items-center gap-4 mb-6">
                   <Avatar className="h-16 w-16 border-2 border-terminal-cyan">
-                    <AvatarImage src="/pp.jpg" alt="Profile Picture" />
+                    <AvatarImage src="./pp.jpg" alt="Profile Picture" />
                     <AvatarFallback className="bg-terminal-gray text-terminal-green">DEV</AvatarFallback>
                   </Avatar>
                   <TerminalEffect 
@@ -87,8 +86,10 @@ const Hero = () => {
                       size="lg"
                       className="bg-terminal-green text-black hover:bg-terminal-green/90"
                       onClick={() => {
-                        // example: navigate to a section
-                        document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+                        const projectsSection = document.getElementById("projects");
+                        if (projectsSection) {
+                          projectsSection.scrollIntoView({ behavior: "smooth" });
+                        }
                       }}
                     >
                       Explore Projects
@@ -99,7 +100,10 @@ const Hero = () => {
                     size="lg"
                     className="border-terminal-cyan text-terminal-cyan hover:bg-terminal-cyan/10"
                     onClick={() => {
-                      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                      const contactSection = document.getElementById("contact");
+                      if (contactSection) {
+                        contactSection.scrollIntoView({ behavior: "smooth" });
+                      }
                     }}
                   >
                     Contact Me
@@ -115,6 +119,13 @@ const Hero = () => {
           <a 
             href="#projects" 
             className="flex flex-col items-center text-terminal-cyan hover:text-terminal-cyan/80 transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              const projectsSection = document.getElementById("projects");
+              if (projectsSection) {
+                projectsSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
             <span className="text-sm mb-2">View my work</span>
             <ArrowDown className="h-6 w-6 animate-bounce" />
